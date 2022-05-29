@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Newsitem from './Newsitem'
 
-export default function News() {
-  return (
-    <div>
-      <h1>head2</h1>
-    </div>
-  )
+export class News extends Component {
+  render() {
+    return (
+      <div>
+        <p>this is news component</p>
+        <Newsitem/>
+      </div>
+    )
+  }
 }
+
+export default News
